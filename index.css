@@ -50,3 +50,20 @@ body{
 
       }
       
+#start{
+      color: whitesmoke;
+      background-color: rgba(40, 37, 37, 0.323);
+      border-radius: 2px solid white;
+      font-size: 20px;
+      border-radius: 9px;
+      box-shadow: 1px 1px 8px salmon;
+}
+
+a{
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      border-radius: 9px;
+      padding: 5px;
+      box-shadow: 1px 1px 8px salmon;
+}

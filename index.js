@@ -6,6 +6,7 @@ let started =false;
 let level=0;
 let h2 =document.querySelector("h2");
 let h3=document.querySelector("h3");
+let start=document.getElementById("start");
 document.addEventListener("keypress",function(){
      if(started== false){
       console.log("game started");
@@ -14,6 +15,15 @@ document.addEventListener("keypress",function(){
      }
     
 });
+
+start.addEventListener("click",function(){
+      if(started==false){
+            console.log("game started");
+            started=true;
+            levelup();
+           }
+});
+
 function btnflash(btn){
       btn.classList.add("flash");
       setTimeout(function(){
@@ -23,7 +33,7 @@ function btnflash(btn){
 function levelup(){
       userseq=[];
 level++;
-h2.innerText=`Level ${level}`;
+h2.innerText=`Score ${level}`;
 //random button choose
 
 let randomidx =Math.floor((Math.random()*4));
